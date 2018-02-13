@@ -1,0 +1,28 @@
+form{
+    margin: 0px 550px;
+}
+
+.text-input{
+    padding: 10px;
+    border-style: dotted;
+    border-color: #4b4b4b;
+}
+span{
+    color: #343434;
+    font-size: smaller;
+}
+
+.radio-input{
+    padding: 0px 0px 5px 0px;
+    height:20px; width:20px;
+}
+
+#checkbox{
+    height:12px; width:20px;
+}
+
+#submit{
+    width: 350px;
+    padding: 5px;
+    margin-top:20px
+}

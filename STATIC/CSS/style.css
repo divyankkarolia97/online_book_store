@@ -1,0 +1,20 @@
+body{
+    font-family: "arial";
+}
+.nav-icon{
+    text-align: center;
+    background-color: beige;
+    padding: 15px;
+    font-family: "DejaVu Sans";
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: larger;
+    color: black;
+}
+#heading{
+    font-weight: 800;
+}

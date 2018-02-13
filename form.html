@@ -3,34 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Online Book Store</title>
+    <link rel="stylesheet" href="STATIC/CSS/style.css">
+    <link rel="stylesheet" href="STATIC/CSS/form.css">
 </head>
 <body>
 <h1>Online Book Store <img height="100" width="100" src="ASSETS/logo.jpg"></h1>
-<br><br>
-    <form action="/find.php" method="GET">
-        AUTHOR:<br>
-        <input type="number" name="author">
-        <br><br>
-        TITLE:<br>
-        <input type="text" name="title">
-        <br><br>
-        KEYWORD:<br>
-        <input type="number" name="keyword">
-        <br><br>
-        ISBN:<br>
-        <input type="number" name="isbn">
-        <br><br>
+<table>
+    <tr>
+        <td class="nav-icon" width="400">
+            <a href="/onlineBookStore/index.html">
+                <div style="height:100%;width:100%">
+                    HOME
+                </div>
+            </a>
+        </td>
+        <td class="nav-icon" width="400">
+            <a href="/onlineBookStore/form.html">
+                <div style="height:100%;width:100%">
+                    FIND BOOK
+                </div>
+            </a>
+        </td>
+        <td class="nav-icon" width="400">
+            <a href="/onlineBookStore/books.html">
+                <div style="height:100%;width:100%">
+                    BOOKS
+                </div>
+            </a>
+        </td>
+        <td class="nav-icon" width="400">
+            <a href="/onlineBookStore/about.html">
+                <div style="height:100%;width:100%">
+                    ABOUT
+                </div>
+            </a>
+        </td>
+
+    </tr>
+
+</table>
+<br>
+<form action="find.jsp" method="GET">
+    <span>Author:</span><br>
+    <input class="text-input" type="text" name="author" size="35">
+    <br><br>
+    <span>Title:</span><br>
+    <input class="text-input" type="text" name="title" size="35">
+    <br><br>
+    <span>Keywork:</span><br>
+    <input class="text-input" type="text" name="keyword" size="35">
+    <br><br>
+    <span>ISBN:</span><br>
+    <input class="text-input" type="text" name="isbn" size="35">
+    <br><br>
 
 
-        GENRE:<br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genre" value="academics"> Academics<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genre" value="comics"> Comics<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genre" value="fiction"> Fiction<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genre" value="selfhelpbooks"> Self Help Books<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genre" value="magazine"> Magazine<br>
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <span>Genre:</span><br><br>
+    <div class="radio">&nbsp;&nbsp;&nbsp;&nbsp;<input class="radio-input" type="radio" name="genre" value="academics"><span>Academics</span></div><br>
+    <div class="radio">&nbsp;&nbsp;&nbsp;&nbsp;<input class="radio-input" type="radio" name="genre" value="comics"><span>Comics</span></div><br>
+    <div class="radio">&nbsp;&nbsp;&nbsp;&nbsp;<input class="radio-input" type="radio" name="genre" value="fiction"><span>Fiction</span></div><br>
+    <div class="radio">&nbsp;&nbsp;&nbsp;&nbsp;<input class="radio-input" type="radio" name="genre" value="selfhelpbooks"><span>Self Help Books</span></div><br>
+    <div class="radio">&nbsp;&nbsp;&nbsp;&nbsp;<input class="radio-input" type="radio" name="genre" value="magazine"><span>Magazine</span></div><br>
+
+
+    <input id="checkbox" type="checkbox" name="recommend">Recommend something
+    <br>
+    <input id="submit" type="submit" value="Submit">
+</form>
 
 </body>
 </html>
