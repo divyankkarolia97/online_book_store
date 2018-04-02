@@ -24,4 +24,6 @@
         </p></li>
         </ul>
 </body>
+<div align="right"><a href="/onlineBookStore/feedback.html" >Leave a message :)</a></span>
+
 </html>

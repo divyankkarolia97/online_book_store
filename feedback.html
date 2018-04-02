@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="STATIC/CSS/style.css">
+    <link rel="stylesheet" href="STATIC/CSS/form.css">
+</head>
+<body>
+<h1 id="heading">Online Book Store <img height="100" width="100" src="ASSETS/logo.jpg"></h1>
+
+    <table>
+        <tr>
+            <td class="nav-icon" width="400">
+                <a href="/onlineBookStore/index.html">
+                    <div style="height:100%;width:100%">
+                        HOME
+                    </div>
+                </a>
+            </td>
+            <td class="nav-icon" width="400">
+                <a href="/onlineBookStore/form.html">
+                    <div style="height:100%;width:100%">
+                        FIND BOOK
+                    </div>
+                </a>
+            </td>
+            <td class="nav-icon" width="400">
+                <a href="/onlineBookStore/books.html">
+                    <div style="height:100%;width:100%">
+                        BOOKS
+                    </div>
+                </a>
+            </td>
+            <td class="nav-icon" width="400">
+                <a href="/onlineBookStore/about.html">
+                    <div style="height:100%;width:100%">
+                        ABOUT
+                    </div>
+                </a>
+            </td>
+
+        </tr>
+
+    </table>
+    <br>
+    <!-- here comes the feedback form -->
+
+    <form action="feedback.jsp" method="POST">
+        <span>Name:</span><br>
+        <input class="text-input" type="text" name="name" size="35">
+        <br><br>
+        <span>E-mail:</span><br>
+        <input class="text-input" type="text" name="email" size="35">
+        <br><br>
+        <span>Mobile:</span><br>
+        <input class="text-input" type="text" name="mobile" size="35">
+        <br><br>
+        <span>Feedback:</span><br>
+        <textarea class="text-input" type="text" name="feedback" size="35"></textarea>
+        <br><br>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
